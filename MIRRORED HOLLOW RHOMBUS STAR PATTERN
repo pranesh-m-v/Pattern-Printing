@@ -9,8 +9,24 @@ int main()
         for(int s = 1; s<i; s++)
             printf(" ");
         for(int j=1; j<=c; j++)
-            printf("*");
+        {
+            if(i == 1 || i == r)
+            {
+                printf("*");
+                continue;
+            }
+            if(j ==1 || j == c)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+    
         printf("\n");
     }
+    
     return 0;
 }
